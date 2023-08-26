@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Sweet Delights Candy Shop</title>
+    <style>
+        /* Reset and global styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f3eb;
+            color: #333;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #e74c3c;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        /* Navigation styles */
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Hero section styles */
+        #hero {
+            background-image: url('candy-hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 10rem 0;
+        }
+
+        #hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        #hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        #hero .cta-button {
+            display: inline-block;
+            background-color: #2b2b2b;
+            color: #fff;
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: background-color 0.3s ease;
+        }
+
+        #hero .cta-button:hover {
+            background-color: #1a1a1a;
+        }
+
+        /* About section styles */
+        #about {
+            background-color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: #2b2b2b;
+        }
+
+        #about p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+            color: #555;
+        }
+
+        /* Menu section styles */
+        #menu {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .menu-item {
+            display: inline-block;
+            margin: 0 2.5rem;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .menu-item h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .menu-item p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .menu-item span {
+            display: block;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-top: 1.5rem;
+        }
+
+        /* Contact section styles */
+        #contact {
+            background-color: #2b2b2b;
+            color: #fff;
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #contact p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        #contact a {
+            color: #e74c3c;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        #contact a:hover {
+            color: #c0392b;
+        }
+
+        /* Footer styles */
+        footer {
+            text-align: center;
+            padding: 1.5rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Welcome to Sweet Delights Candy Shop</h1>
+            <p>Experience the magic of delectable candies and treats.</p>
+            <a href="#menu" class="cta-button">Explore Our Selection</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We are committed to bringing smiles to people's faces with our delightful range of candies. Taste the joy with every bite!</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2>Our Selection</h2>
+            <div class="menu-item">
+                <img src="candy-gummies.jpg" alt="Fruit Gummies">
+                <h3>Fruit Gummies</h3>
+                <p>Chewy and bursting with fruity flavors.</p>
+                <span>$2.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="candy-chocolates.jpg" alt="Choco Delights">
+                <h3>Choco Delights</h3>
+                <p>Luxurious chocolates for every chocolate lover.</p>
+                <span>$4.49
